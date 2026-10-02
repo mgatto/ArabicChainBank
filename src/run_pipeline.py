@@ -1,6 +1,7 @@
 import subprocess
 
-def run_script(script_name):
+
+def run_script(script_name: str) -> None:
     try:
         print(f"Running {script_name}...")
         subprocess.run(["python", script_name], check=True)
@@ -9,11 +10,10 @@ def run_script(script_name):
         print(f"Error occurred while running {script_name}: {e}")
 
 
-scripts_to_run = [
+scripts_to_run: list[str] = [
     "src/merge_data.py",
     "src/build_trees.py",
-    "src/visualize_trees.py"
-   
+    "src/visualize_trees.py",
 ]
 
 for script in scripts_to_run:
