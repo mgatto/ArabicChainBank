@@ -65,7 +65,7 @@ def run_merge(canonical_data_file, lemma_file, merged_file):
         logging.info("Merge process completed successfully.")
 
     except Exception as e:
-        logging.error(f"Error during merging process: {e}")
+        logging.exception(f"Error during merging process: {e}")
         sys.exit(1)
 
 

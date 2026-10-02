@@ -98,7 +98,7 @@ def run_tree_builder(input_file: Path, output_file: Path):
         logging.info(f"Build process completed successfully. Output saved to: {output_file}")
 
     except Exception as e:
-        logging.error(f"Error during build process: {e}")
+        logging.exception(f"Error during build process: {e}")
 
 def main():
     if len(sys.argv) != 3:
