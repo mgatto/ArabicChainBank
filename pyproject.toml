@@ -1,0 +1,62 @@
+[project]
+name = "arabic-chainbank"
+version = "1.0.0"
+description = "A derivational ChainBank for Modern Standard Arabic: linking roots to their derived forms as structured knowledge graphs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Reham Marzouk" },
+    { name = "Nizar Habash" },
+]
+keywords = [
+    "arabic",
+    "morphology",
+    "derivational-morphology",
+    "chainbank",
+    "nlp",
+    "knowledge-graph",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: Arabic",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    "pandas~=3.0",
+    "numpy~=2.5",
+    "networkx~=3.7",
+    "matplotlib~=3.11",
+    "python-bidi~=0.6",
+    "arabic-reshaper~=3.0",
+]
+
+#[project.optional-dependencies]
+#dev = [
+#    "pytest>=8.0",
+#    "ruff>=0.6",
+#]
+
+[project.urls]
+Homepage = "https://github.com/CAMeL-Lab/ArabicChainBank"
+Repository = "https://github.com/CAMeL-Lab/ArabicChainBank"
+Paper = "https://aclanthology.org/2025.abjadnlp-1.9/"
+
+#[tool.ruff]
+#line-length = 100
+#target-version = "py311"
+#
+#[tool.ruff.lint]
+#select = ["E", "F", "I", "UP", "B"]
+#
+#[tool.pytest.ini_options]
+#testpaths = ["tests"]
